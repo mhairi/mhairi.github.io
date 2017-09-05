@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SERPai Data Collection</title>
+  </head>
+  <body>
+    <h1>SERPai Data Collection</h1>
+    <br>
+    <form action="http://46.101.55.100/serpai-data-collection/getData" method="post">
+        <div class = "input-group">
+            <div>
+                <label for="keywords">Keywords:</label>
+                <input type="text" name="keywords" id="keywords" class="form-control">
+            </div>
+            <div>
+                <label for="domains">Domains:</label>
+                <input type="text" name="domains" id="domains" class="form-control">
+            </div>
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="text" name="email" id="email" class="form-control">
+            </div>
+            <div>
+                <label for="keywords">Authority Labs Key:</label>
+                <input type="text" name="authority_labs_key" id="authority_labs_key" class="form-control">
+            </div>
+            <div>
+                <label for="locale">Locale:</label>
+                <select name="locale" id="locale" class="form-control">
+                  <option value="en-uk">UK</option>
+                  <option value="en-US">US</option>
+                  <option value="en-au">Australia</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <h3>Optional Extra Data</h3>
+        <div class = "input-group">
+            <div>
+                <label for="ahrefs_key">AHREFs Key:</label>
+                <input type="text" name="ahrefs_key" id="ahrefs_key" class="form-control">
+            </div>
+            <div>
+                <label for="alchemy_api_key">Alchemy API Key:</label>
+                <input type="text" name="alchemy_api_key" id="alchemy_api_key" class="form-control">
+            </div>
+            <div>
+                <label for="buzzsumo_key">Buzzsumo Key:</label>
+                <input type="text" name="buzzsumo_key" id="buzzsumo_key" class="form-control">
+            </div>
+            <div>
+                <label for="diffbot_key">Diffbot Key:</label>
+                <input type="text" name="diffbot_key" id="diffbot_key" class="form-control">
+            </div>
+            <div>
+                <label for="pagespeed_key">Pagespeed Key:</label>
+                <input type="text" name="pagespeed_key" id="pagespeed_key" class="form-control">
+            </div>
+            <div>
+                <label for="keyword_tool_key">Keyword Tool Key:</label>
+                <input type="text" name="keyword_tool_key" id="keyword_tool_key" class="form-control">
+            </div>
+        </div>
+        <br>
+        <div>
+            <button type="submit" class = "btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+    <script>
+        function addElement(parentId, elementTag, elementId, html) {
+            // Adds an element to the document
+            var p = document.getElementById(parentId);
+            var newElement = document.createElement(elementTag);
+            newElement.setAttribute('id', elementId);
+            newElement.innerHTML = html;
+            p.appendChild(newElement);
+        }
+    </script>
+  </body>
+</html>
