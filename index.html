@@ -8,17 +8,25 @@
     <title>SERPai Data Collection</title>
   </head>
   <body>
+  <div class = "container-fluid">
     <h1>SERPai Data Collection</h1>
     <br>
     <form action="http://46.101.55.100/serpai-data-collection/getData" method="post">
         <div class = "input-group">
-            <div>
-                <label for="keywords">Keywords:</label>
-                <input type="text" name="keywords" id="keywords" class="form-control">
+             <div>
+                <fieldset data-multi>
+                    <label for = "keywords">Keywords:</label>
+                    <input type="text" name="keywords" id="keywords" class="form-control" data-multi-element>
+                    <button type="button" class = "btn">Add More</button>
+                </fieldset>
             </div>
             <div>
-                <label for="domains">Domains:</label>
-                <input type="text" name="domains" id="domains" class="form-control">
+            <div>
+                <fieldset data-multi>
+                    <label for = "domains">Domains:</label>
+                    <input type="text" name="domains" id="domains" class="form-control" data-multi-element>
+                    <button type="button" class = "btn">Add More</button>
+                </fieldset>
             </div>
             <div>
                 <label for="email">Email Address:</label>
@@ -72,14 +80,14 @@
 
     </form>
     <script>
-        function addElement(parentId, elementTag, elementId, html) {
-            // Adds an element to the document
-            var p = document.getElementById(parentId);
-            var newElement = document.createElement(elementTag);
-            newElement.setAttribute('id', elementId);
-            newElement.innerHTML = html;
-            p.appendChild(newElement);
-        }
+      document.querySelectorAll('[data-multi]').forEach((wrapper) => {
+        const button = wrapper.querySelector('button');
+        const template = wrapper.querySelector('[data-multi-element]').cloneNode();
+        button.addEventListener('click', () => {
+          wrapper.insertBefore(template.cloneNode(), button);
+        });
+      })
     </script>
+  </div>
   </body>
 </html>
