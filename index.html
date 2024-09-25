@@ -1,93 +1,128 @@
 <!DOCTYPE html>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mhairi & Jason's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mhairi & Jason's Wedding</h1>
+        </div>
+    </header>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>SERPai Data Collection</title>
-  </head>
-  <body>
-  <div class = "container-fluid">
-    <h1>SERPai Data Collection</h1>
-    <br>
-    <form action="http://46.101.55.100/serpai-data-collection/getData" method="post">
-        <div class = "input-group">
-             <div>
-                <fieldset data-multi>
-                    <label for = "keywords">Keywords:</label>
-                    <input type="text" name="keywords" id="keywords" class="form-control" data-multi-element>
-                    <button type="button" class = "btn">Add More</button>
-                </fieldset>
-            </div>
-            <div>
-            <div>
-                <fieldset data-multi>
-                    <label for = "domains">Domains:</label>
-                    <input type="text" name="domains" id="domains" class="form-control" data-multi-element>
-                    <button type="button" class = "btn">Add More</button>
-                </fieldset>
-            </div>
-            <div>
-                <label for="email">Email Address:</label>
-                <input type="text" name="email" id="email" class="form-control">
-            </div>
-            <div>
-                <label for="keywords">Authority Labs Key:</label>
-                <input type="text" name="authority_labs_key" id="authority_labs_key" class="form-control">
-            </div>
-            <div>
-                <label for="locale">Locale:</label>
-                <select name="locale" id="locale" class="form-control">
-                  <option value="en-uk">UK</option>
-                  <option value="en-US">US</option>
-                  <option value="en-au">Australia</option>
-                </select>
-            </div>
-        </div>
-        <hr>
-        <h3>Optional Extra Data</h3>
-        <div class = "input-group">
-            <div>
-                <label for="ahrefs_key">AHREFs Key:</label>
-                <input type="text" name="ahrefs_key" id="ahrefs_key" class="form-control">
-            </div>
-            <div>
-                <label for="alchemy_api_key">Alchemy API Key:</label>
-                <input type="text" name="alchemy_api_key" id="alchemy_api_key" class="form-control">
-            </div>
-            <div>
-                <label for="buzzsumo_key">Buzzsumo Key:</label>
-                <input type="text" name="buzzsumo_key" id="buzzsumo_key" class="form-control">
-            </div>
-            <div>
-                <label for="diffbot_key">Diffbot Key:</label>
-                <input type="text" name="diffbot_key" id="diffbot_key" class="form-control">
-            </div>
-            <div>
-                <label for="pagespeed_key">Pagespeed Key:</label>
-                <input type="text" name="pagespeed_key" id="pagespeed_key" class="form-control">
-            </div>
-            <div>
-                <label for="keyword_tool_key">Keyword Tool Key:</label>
-                <input type="text" name="keyword_tool_key" id="keyword_tool_key" class="form-control">
-            </div>
-        </div>
-        <br>
-        <div>
-            <button type="submit" class = "btn btn-primary">Submit</button>
-        </div>
+    <div class="container">
+        <section class="content-section">
+            <h2>Welcome</h2>
+            <p>After 16 years we are finally getting married! We hope you will be able to join us. The wedding is three days long, but do not worry if you cannot make all three nights: just let us know when you RSVP.</p>
+        </section>
 
-    </form>
-    <script>
-      document.querySelectorAll('[data-multi]').forEach((wrapper) => {
-        const button = wrapper.querySelector('button');
-        const template = wrapper.querySelector('[data-multi-element]').cloneNode();
-        button.addEventListener('click', () => {
-          wrapper.insertBefore(template.cloneNode(), button);
-        });
-      })
-    </script>
-  </div>
-  </body>
-</html>
+     <section class="content-section">
+    <h2>Wedding Schedule</h2>
+    
+    <div class="day">
+        <h3>Saturday 8th of March</h3>
+        <ul>
+            <li><strong>2:30pm</strong> – Bus from Lerwick to Levenwick. Pick up at the Viking Bus Station.</li>
+            <li><strong>3pm</strong> – Wedding at Levenwick Hall</li>
+            <li><strong>5pm</strong> – Dinner at Levenwick Hall.</li>
+            <li><strong>7pm</strong> – Bus From Levenwick to Lerwick</li>
+            <li><strong>8pm – 1am</strong>: Dance at Lerwick Town Hall.
+                <ul>
+                    <li>Soup and homebakes from 10:30pm.</li>
+                    <li>Cash bar.</li>
+                    <li>Please no shoes with heels less than 10mm<sup>2</sup> or other shoes that could damage the floor of the Town Hall.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="day">
+        <h3>Sunday 9th of March</h3>
+        <ul>
+            <li><strong>6pm</strong> – Second night at our house and at Mareel café bar.
+                <ul>
+                    <li>Our address is 57 Burgh Road, Lerwick</li>
+                    <li>Mareel café bar is a 5 minute walk from ours.</li>
+                    <li>Meet at either location.</li>
+                    <li>Light snacks available at ours.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="day">
+        <h3>Monday 10th of March</h3>
+        <ul>
+            <li><strong>2pm</strong> – Pool party at Sandwick
+                <ul>
+                    <li>Limited availability.</li>
+                    <li>Mention when your RSVP if you'd like to come.</li>
+                </ul>
+            </li>
+            <li><strong>7pm</strong> – Dinner at Gurkha Kitchen
+                <ul>
+                    <li>Guests will have to pay for their own dinner.</li>
+                    <li>Limited availability.</li>
+                    <li>Mention when your RSVP if you'd like to come.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+        <section class="content-section">
+            <h2>RSVP</h2>
+            <p>RSVP by 8th of January to let us know if you'll be there.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfiaKfAmpqS8kQuRWEeOTzrrOJ1JYR5sZVMyNTgS5E6-3djMg/viewform?embedded=true" width="640" height="760" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+    </div>
+        <section class="content-section">
+            <h2>Gifts</h2>
+            <p>Gifts
+Please no gifts required. If you would like to give us something you can contribute to our honeymoon fund with cash or at: . 
+</p>
+        </section>
+        <section class="content-section">
+    <h2>Travel to Shetland</h2>
+
+    <p>We both appreciate that travelling to Shetland can be difficult and expensive, and we completely understand if you cannot make the trip. If you do decide to travel up, here is our advice.</p>
+    <p>You have two options to get to Shetland: flying or boat. Both have advantages and disadvantages.</p>
+
+    <h3>Flying</h3>
+    <p>Flying is more expensive, but much faster. There are regular flights from Aberdeen, Edinburgh and Glasgow available from the <a href="https://www.loganair.co.uk/" target="_blank">Loganair website</a>.</p>
+    <ul>
+        <li>The flights are generally cheaper the earlier you book, so we recommend booking early.</li>
+        <li>Aberdeen flights are normally less expensive; you may save money travelling to Aberdeen and flying from there.</li>
+        <li>Apart from the price, the other disadvantage of flying is that it is less reliable. Flights often get delayed or cancelled for poor weather.</li>
+        <li>March is probably one of the better months for flying, but we recommend arriving early if you can and accepting you may get home a day late.</li>
+    </ul>
+
+    <h3>Boat</h3>
+    <p>There is a ferry that sails from Aberdeen every night and arrives in Shetland the next morning (<a href="https://www.northlinkferries.co.uk/" target="_blank">Northlink Ferries</a>).</p>
+    <ul>
+        <li>This will almost certainly be cheaper than the plane and will definitely be cheaper if you don't have a cabin (not necessarily recommended!).</li>
+        <li>It takes between 12 to 14 hours, and can be rough.</li>
+        <li>Bookings for 2025 should open in November, you can sign up for notifications <a href="https://www.northlinkferries.co.uk/booking-info/2025-bookings/" target="_blank">here</a>.</li>
+        <li>We recommend booking as early as you can. Not because the prices go up, but because cabins and space for cars can sell out, particularly in the Summer. March should be okayish, but it's hard to say.</li>
+        <li>The boat is definitely more dependable than flying, but still can get cancelled due to weather. Again, March should be okay, but you can never really say for sure.</li>
+    </ul>
+
+    <h3>Taking / Renting a Car</h3>
+    <p>You definitely do not need a car for the wedding. We'll have a bus that goes from the main town to the venue. However if you want to do some sightseeing a car is useful.</p>
+    <ul>
+        <li>There is public transport, but it's not that frequent.</li>
+        <li>If you want to take your own car you can do that on the Northlink ferry.</li>
+        <li>Depending on how long you are staying for it may be cheaper to rent a car on the island.</li>
+    </ul>
+
+    <h3>Accommodation</h3>
+    <p>Accommodation can be expensive and can sell out in advance. Neither of us have much advice here because we live here and so we don't need to book accommodation! There is a lot of accommodation in the main town, Lerwick, and the bus will take you to and from the wedding.</p>
+
+    <p>If you are not sure about anything contact either of us and we'll do our best to help!</p>
+</section>
+    </div>
+
+</body>
