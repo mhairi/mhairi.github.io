@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('geometric-leaves.png');
     color: #333;
 }
 
 .container {
-    width: 80%;
+    width: 60%;
     margin: auto;
     overflow: hidden;
 }
@@ -20,11 +21,14 @@ header {
     min-height: 70px;
     border-bottom: lightslategrey; 3px solid;
     text-align: center;
+    font-family: "Rosarivo", cursive;
+    font-weight: 400;
 }
 
 header h1 {
     margin: 0;
     padding-bottom: 20px;
+    font-size: 3.5em;
 }
 
 .content-section {
@@ -34,3 +38,10 @@ header h1 {
     border-radius: 5px;
 }
 
+h2 {
+    font-family: "Rosarivo", cursive;
+}
+
+h3 {
+    font-family: "Rosarivo", cursive;
+}
