@@ -1,28 +1,39 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url('fishnets-and-hearts.png');
+    background-image: url('white-waves.png');
     color: #333;
 }
 
 .container {
-    width: 60%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
 header {
-    background: white;
-    color: black;
-    padding-top: 30px;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 50px;
     min-height: 70px;
     border-bottom: lightslategrey; 3px solid;
     text-align: center;
     font-family: "Rosarivo", cursive;
     font-weight: 400;
+}
+
+header evening {
+    background-image: url('lerwick-adjusted.jpg');
+}
+
+header all {
+    background-image: url('levenwick-adjusted.jpg');
 }
 
 header h1 {
@@ -40,8 +51,46 @@ header h1 {
 
 h2 {
     font-family: "Rosarivo", cursive;
+    position: center;
 }
 
 h3 {
     font-family: "Rosarivo", cursive;
+    position: center;
+
+}
+
+.intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+}
+
+.box {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        letter-spacing: 2px;
+        transition: all 0.3s ease;
+    }
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.evening {
+    background-image: url('lerwick-background.jpg');
+}
+
+.all {
+    background-image: url('levenwick-adjusted.jpg');
+}
+
+.logo {
+    background-color: transparent;
+    text-align: center;
 }
